@@ -84,9 +84,15 @@ Below is short description of the flow of the code:
 
 The output of the API is a json response with list a of S3 object links for the logos that were found for the users request along with the social media links that were stored in their metadata.
 
-Example of the output :
 
-{"public_ip_address": "18.133.193.82", "time_taken_seconds": 0.6703431606292725, "lambda_counter": 1, "list_of_logos": [{"url": "https://example.com/", "facebook": "", "twitter": "https://twitter.com/examplecompany", "object_link": "https://xxxxx.s3.eu-west-2.amazonaws.com/example.com.logo"}]}
+Example :
+
+input :
+https:xxxxxxxxx.execute-api.eu-west-2.amazonaws.com/development/logo?url=https://example
+
+output :
+{"public_ip_address": "18.133.193.82", "time_taken_seconds": 0.6703431606292725, "lambda_counter": 1, "list_of_logos": [{"url": "https://example1.com/", "facebook": "https://www.facebook.com/example1", "twitter": "https://twitter.com/example1company", "object_link": "https://xxxxx.s3.eu-west-2.amazonaws.com/example1.com.logo"}, 
+{"url": "https://example2.com/", "facebook": "https://www.facebook.com/example2", "twitter": "https://twitter.com/example2company", "object_link": "https://xxxxx.s3.eu-west-2.amazonaws.com/example2.com.logo"}]}
 
 
 
