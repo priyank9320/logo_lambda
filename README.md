@@ -7,7 +7,7 @@ Serverless Framework was used to deploy the AWS Lambda functions and AWS API Gat
 
 `handler.py` : Contains all the code required to run this. Used in AWS Lambda function.
 
-`serverless.yml` : Contains the yaml file used in Serverless Framework, which was used to deploy the AWS Lambda function.
+`serverless.yml` : The yaml file used in Serverless Framework, which was used to deploy the AWS Lambda function.
 
 `requirements.txt`: Contains all the dependencies that needs to be installed. The Serverless Framework uses this file along with the plugin  "serverless-python-requirements"  to automatically handle the installation.
 
