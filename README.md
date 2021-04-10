@@ -53,6 +53,8 @@ The social media links that were scraped are stored in the metadata of the logo 
 
 The logos saved use the website name as their name, for example : www.example.com , this websites logo will be saved as `example.com.logo` . This was done to avoid ambiguity because some websites have the same domain name and differ only in the Top Level Domain name (TLD).
 
+To increase the speed I have set the memory of Lambda as 1 GB even though the actual memory usage is very low. Increasing the memory further didn't have significant impact on speed.
+
 
 
 # Short description of the algorithm:
