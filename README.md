@@ -1,5 +1,6 @@
 # logo_lambda
-Find companies' twitter and facebook page, scrape logos and store in S3 bucket. Also provides the ability to query the logos using domain names or a prefix.
+
+Finds companies' twitter and facebook page by just using the wbesite url(or even just doamin name), scrape logos and store in S3 bucket. Also provides the ability to query the logos using domain names or a prefix. The target companies are of UK. But can be modified for any other country with small adjustments.
 
 Serverless Framework was used to deploy the AWS Lambda functions and AWS API Gateway was used to build a REST API using the deployed Lambda function.
 
